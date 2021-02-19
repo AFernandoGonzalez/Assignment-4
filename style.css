@@ -1,0 +1,93 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background-color: #f0c16a;
+}
+
+.clock img{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background: #fff ;
+  box-sizing: border-box;
+  border-radius: 100%;
+  border: 10px solid #af9008;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+}
+
+.hours {
+    background: #000;
+    height: 40px;
+    left: 50%;
+    position: absolute;
+    top: 45.5%;
+    transform-origin: 50% 100%;
+    width: 5px;
+    animation: infinite-spinning 10s infinite linear;
+}
+.minutes {
+    background: #000;
+    height: 80px;
+    left: 50%;
+    position: absolute;
+    top: 39.5%;
+    transform-origin: 50% 100%;
+    width: 5px;
+    animation: time 10s infinite linear;
+}
+
+.circle-center {
+    background: #000;
+    height: 50px;
+    width: 50px;
+    top: 47.5%;
+    left: 47.5%;
+    position: absolute;
+    transform-origin: 50% 100%;
+    border-radius: 50%;
+    opacity: 10%;
+}
+
+
+@keyframes time {
+  from {
+      transform: rotate(0deg);
+  }
+
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes infinite-spinning {
+    from {
+        transform: rotate(84deg);
+    }
+
+    to {
+        transform: rotate(113deg);
+    }
+}
